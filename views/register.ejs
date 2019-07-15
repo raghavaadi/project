@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%=title%></title>
+</head>
+<body>
+	
+
+      <h3 style="text-align: center;"><%  include template/header.ejs %>
+	  </h3>
+	  <br>
+	  <br>
+	  <br>
+<form method="POST" action="/register">
+	<table align='center' >
+	<tr>
+		<td>username</td>
+	 	<td><input type="text" name="user" required></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" name="password" required></td>
+	</tr>
+	<tr>
+			<td>Email</td>
+			<td><input type="text" name="email" required></td>
+		</tr>
+	<tr>
+	<td>Name</td>
+	<td><input type="text" name="name" required></td>
+	</tr>
+	<tr>
+		<td><input type="submit" value="Register"></td>
+	</tr>
+	</table>
+</form>
+
+
+</body>
+</html>
